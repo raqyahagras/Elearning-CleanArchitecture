@@ -9,6 +9,7 @@ namespace Anonymous.Shared.Constants
     public class AppSettingsConstants
     {
         public const string DefaultConnection = "DefaultConnection";
+        public const string JWT = "JWT";
 
     }
 }
