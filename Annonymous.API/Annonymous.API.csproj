@@ -21,8 +21,4 @@
     <ProjectReference Include="..\Anonymous.Shared\Anonymous.Shared.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="NewFolder\" />
-  </ItemGroup>
-
 </Project>
