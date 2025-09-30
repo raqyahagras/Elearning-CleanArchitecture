@@ -1,0 +1,20 @@
+# Build results
+bin/
+obj/
+out/
+
+#logs
+logs/
+*.log
+
+# Visual Studio
+.vs/
+
+# Secrets
+appsettings.Development.json
+appsettings.Local.json
+*.env
+*.pfx
+*.key
+
+
