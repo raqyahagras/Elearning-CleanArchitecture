@@ -1,5 +1,5 @@
-﻿using Annonymous.Application.DTOs;
-using Annonymous.Application.Services.Interfaces;
+﻿using Annonymous.Application.DTOs.Authentication;
+using Annonymous.Application.Services.Interfaces.Auth;
 using Annonymous.Domain.Entities.Auth;
 using Anonymous.Infrastructure.Settings;
 using Microsoft.AspNetCore.Identity;
@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Anonymous.Infrastructure.Services.Implementations
+namespace Anonymous.Infrastructure.Services.Implementations.Auth
 {
     public class JwtService : IJwtService
     {

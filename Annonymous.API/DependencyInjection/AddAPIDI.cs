@@ -43,6 +43,7 @@ namespace Annonymous.API.DependencyInjection
                     };
                 });
             #endregion
+
             return services;
         }
     }

@@ -1,4 +1,6 @@
 ﻿using Annonymous.Domain.Entities.Auth;
+using Annonymous.Domain.Entities.Students;
+using Annonymous.Domain.Entities.Teachers;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,6 +17,7 @@ namespace Anonymous.Infrastructure.Data
         { }
        
 
-        
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Student> Students { get; set; }
     }
 }

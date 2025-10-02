@@ -9,6 +9,6 @@ namespace Annonymous.API.Controllers
     [Authorize]
     public class AuthController : ControllerBase
     {
-        
+    }
     
     }

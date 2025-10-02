@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Annonymous.Application.DTOs
+namespace Annonymous.Application.DTOs.Authentication
 {
     public class JwtTokenDto
     {

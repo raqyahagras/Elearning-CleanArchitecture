@@ -1,4 +1,7 @@
-﻿using Annonymous.Domain.Enums;
+﻿using Annonymous.Domain.Entities.Students;
+using Annonymous.Domain.Entities.Students;
+using Annonymous.Domain.Entities.Teachers;
+using Annonymous.Domain.Enums;
 using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
@@ -15,5 +18,7 @@ namespace Annonymous.Domain.Entities.Auth
         public string LastName { get; set; } = string.Empty;
         public Gender Gender { get; set; }
         public string? ProfilePictureUrl { get; set; } = string.Empty;
+        public Student Student { get; set; } = null!;
+        public Teacher Teacher { get; set; } = null!;
     }
 }
