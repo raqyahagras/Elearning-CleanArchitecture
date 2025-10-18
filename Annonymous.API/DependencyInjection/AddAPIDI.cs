@@ -1,4 +1,8 @@
-﻿using Anonymous.Infrastructure.Settings;
+﻿using Annonymous.Application.Repositories.Interfaces;
+using Annonymous.Application.Services.Interfaces.Courses;
+using Anonymous.Infrastructure.Repositories.Implementations;
+using Anonymous.Infrastructure.Services.Implementations.Courses;
+using Anonymous.Infrastructure.Settings;
 using Anonymous.Shared.Constants;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +22,8 @@ namespace Annonymous.API.DependencyInjection
                });
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen();
+           
+
 
             #region Add JWT 
             var jwtSettings = configuration.GetSection(AppSettingsConstants.JWT).Get<JWTSettings>();

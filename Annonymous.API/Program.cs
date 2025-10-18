@@ -16,6 +16,7 @@ namespace Annonymous.API
             builder.Services.AddInfrastructureServices(builder.Configuration)
                             .AddAPIServices(builder.Configuration);
 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

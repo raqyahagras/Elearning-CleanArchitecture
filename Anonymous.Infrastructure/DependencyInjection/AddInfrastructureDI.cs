@@ -1,5 +1,9 @@
-﻿using Annonymous.Domain.Entities.Auth;
+﻿using Annonymous.Application.Repositories.Interfaces;
+using Annonymous.Application.Services.Interfaces.Courses;
+using Annonymous.Domain.Entities.Auth;
 using Anonymous.Infrastructure.Data;
+using Anonymous.Infrastructure.Repositories.Implementations;
+using Anonymous.Infrastructure.Services.Implementations.Courses;
 using Anonymous.Shared.Constants;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -34,6 +38,13 @@ namespace Anonymous.Infrastructure.DependencyInjection
             })
                .AddRoles<IdentityRole>()
                .AddEntityFrameworkStores<ELearningDbContext>();
+            #endregion
+            #region Courses
+            // Register Repositories
+            services.AddScoped<ICourseRepository, CourseRepository>();
+
+            // Register Services
+            services.AddScoped<ICourseServices, CourseServices>(); 
             #endregion
 
 
